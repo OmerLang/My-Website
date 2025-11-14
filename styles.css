@@ -1,0 +1,80 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.siteLayout {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 42vw 1fr auto auto 200px;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+}
+
+.hero {
+  background-image: url(images/heroBackground.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20vh;
+  gap: 8vh;
+}
+
+.subHero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20vh;
+  gap: 8vh;
+}
+
+.interestsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25vh;
+  gap: 8vh;
+}
+.hobbiesDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8vh;
+}
+
+.hobbyCard {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.reachOut {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50vh;
+  gap: 5vh;
+  padding-bottom: 25vh;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5vh;
+}
+.footerLinks {
+  display: flex;
+  padding-top: 4vh;
+  gap: 4vh;
+}
