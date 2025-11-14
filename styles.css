@@ -15,13 +15,19 @@ body {
 }
 
 .hero {
-  background-image: url(images/heroBackground.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(188, 231, 145, 0.5) 75%,
+      rgba(188, 231, 145, 1) 100%
+    ),
+    url(images/heroBackground.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 20vh;
+  padding: 15vh;
   gap: 8vh;
 }
 
@@ -30,62 +36,173 @@ body {
   font-size: 3.5rem;
   font-weight: 800;
   font-optical-sizing: auto;
-  color: #0d71db;
+  color: #00e5ff;
   text-shadow: 0 0 4px rgb(13, 53, 83), 0 0 12px rgb(13, 53, 83),
     2px 2px 3px rgb(13, 53, 83);
   letter-spacing: 2px;
 }
 
+.hero .student {
+  font-family: "Nunito", sans-serif;
+  font-size: 2.5rem;
+  color: #00e5ff;
+  font-weight: 700;
+  text-shadow: 0 0 4px #000, 0 0 12px #000, 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
 .subHero {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20vh;
-  gap: 8vh;
+  padding-top: 8vh;
+  padding-bottom: 20vh;
+  gap: 4vh;
+  background-color: rgb(136, 200, 255);
+}
+
+.subHero::before {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  clip-path: ellipse(60% 65% at 50% 25%);
+  z-index: 0;
+  background: rgb(188, 231, 145);
+}
+
+.subHero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.subHero h2 {
+  padding-top: 2vh;
+  font-family: "Nunito", sans-serif;
+  font-size: 2.5rem;
+  color: #00e5ff;
+  text-shadow: 0 0 2px rgb(13, 53, 83), 0 0 8px rgb(13, 53, 83),
+    2px 2px 3px rgb(13, 53, 83);
+  letter-spacing: 3px;
+}
+.subHero p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
 }
 
 .interestsSection {
+  position: relative;
+  background-color: rgb(250, 194, 90);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 25vh;
+  padding: 15vh;
   gap: 8vh;
 }
-.hobbiesDescription {
+
+.interestsSection::before {
+  position: absolute;
+  clip-path: ellipse(60% 65% at 50% 25%);
+  background: rgb(136, 200, 255);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: 0;
+}
+.interestsSection > * {
+  position: relative;
+  z-index: 1;
+}
+
+.interestsSection .hobbiesDescription {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  gap: 8vh;
+  gap: 2vh;
+  padding-bottom: 7vh;
 }
 
-.hobbyCard {
-  font-weight: 300;
+.interestsSection .hobbiesTitle {
+  font-family: "Nunito", sans-serif;
+  font-size: 2.5rem;
+  color: #00e5ff;
+  text-shadow: 0 0 2px rgb(13, 53, 83), 0 0 8px rgb(13, 53, 83),
+    2px 2px 3px rgb(13, 53, 83);
+  letter-spacing: 3px;
+}
+
+.hobbiesDescription .hobbyCard {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
   font-size: 1.5rem;
+  padding-bottom: 2vh;
 }
 
 .reachOut {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50vh;
-  gap: 5vh;
+  padding-top: 15vh;
+  gap: 10vh;
   padding-bottom: 25vh;
+  background-color: rgb(78, 91, 163);
+}
+
+.reachOut::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  clip-path: ellipse(60% 65% at 50% 25%);
+  background-color: rgb(250, 194, 90);
+  content: "";
+  z-index: 0;
+}
+
+.reachOut > * {
+  position: relative;
+  z-index: 1;
+}
+
+.reachOut h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 2.5rem;
+  color: #00e5ff;
+  text-shadow: 0 0 2px rgb(13, 53, 83), 0 0 8px rgb(13, 53, 83),
+    2px 2px 3px rgb(13, 53, 83);
+  letter-spacing: 3px;
 }
 
 .footer {
+  background-color: rgb(78, 91, 163);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3.5vh;
+  gap: 3vh;
 }
 .footerLinks {
   display: flex;
   padding-top: 4vh;
-  gap: 4vh;
+  gap: 15vh;
+}
+
+.footer .rights {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-top: 4vh;
+  color: white;
 }
