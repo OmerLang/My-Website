@@ -25,6 +25,17 @@ body {
   gap: 8vh;
 }
 
+.hero .myName {
+  font-family: "Playwrite HU", cursive;
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-optical-sizing: auto;
+  color: #0d71db;
+  text-shadow: 0 0 4px rgb(13, 53, 83), 0 0 12px rgb(13, 53, 83),
+    2px 2px 3px rgb(13, 53, 83);
+  letter-spacing: 2px;
+}
+
 .subHero {
   display: flex;
   flex-direction: column;
