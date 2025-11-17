@@ -105,9 +105,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 8vh;
+  padding-top: 4vh;
   padding-bottom: 30vh;
-  gap: 20vh;
+  gap: 10vh;
 }
 
 .hobbiesDescription {
@@ -128,7 +128,7 @@ body {
 
 .hobbyCard .inner {
   width: 400px;
-  background: #00b6ff;
+  background: #006eff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,7 +161,6 @@ body {
 }
 
 .hobbyCard .inner .videoGames {
-  padding-bottom: 0.6em;
   padding-left: 0.2em;
   padding-top: 0.1em;
 }
@@ -175,7 +174,7 @@ body {
 
 .interestsSection::before {
   position: absolute;
-  clip-path: ellipse(60% 74% at 50% 25%);
+  clip-path: ellipse(60% 60% at 50% 25%);
   background: rgb(136, 200, 255);
   top: 0;
   width: 100%;
@@ -203,8 +202,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 15vh;
-  gap: 10vh;
+  gap: 3vh;
   padding-bottom: 25vh;
   background-color: rgb(78, 91, 163);
 }
@@ -225,7 +223,7 @@ body {
   z-index: 1;
 }
 
-.reachOut h2 {
+.reachOut h3 {
   font-family: "Nunito", sans-serif;
   font-size: 2.5rem;
   color: #ffffff;
@@ -240,12 +238,25 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3vh;
+  gap: 1vh;
 }
 .footerLinks {
   display: flex;
   padding-top: 4vh;
   gap: 15vh;
+}
+
+.footerLinks a {
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.1s ease-out;
+}
+
+.footerLinks a:hover {
+  color: #5da3ff;
 }
 
 .footer .rights {
@@ -254,4 +265,34 @@ body {
   font-size: 1rem;
   padding-top: 4vh;
   color: rgb(255, 255, 255);
+}
+
+.reachOut h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 4rem;
+  color: #ffffff;
+  text-shadow: 0 0 2px rgb(13, 53, 83), 0 0 8px rgb(13, 53, 83),
+    2px 2px 3px rgb(13, 53, 83);
+  letter-spacing: 3px;
+}
+
+.contactItem {
+  font-family: "Nunito", sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 26px;
+  background: linear-gradient(135deg, #4c6ef5, #228be6);
+  background-position: left;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  color: white;
+  background-size: 200%;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1.4em;
+}
+
+.contactItem:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.15);
 }
